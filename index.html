@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+</head>
+<body>
+    <style>
+        a{
+            width: 60px;
+            height: 60px;
+            background-color: #c40d2b;
+            display: inline-block;
+            border-radius: 100%;
+            position: fixed;
+            right: 60px;
+            bottom: 60px;
+            font-size: 40px;
+            color: aliceblue;
+            font-weight: bold;
+            text-align: center;
+            line-height: 60px;
+            box-sizing: border-box;
+        }
+        a::before{
+            content: '';
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background-color: transparent;
+            border: 1px solid  #c40d2b;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 100%;
+            box-sizing: border-box;
+            animation: link 1.5s infinite;
+
+        }
+        @keyframes link{
+            0%{
+                transform: scale(0.9);
+            }
+            100%{
+                transform: scale(1.8);
+                border-color: transparent;
+            }
+        }
+    </style>
+    <a href="tel:+905305906985">
+        <svg class="svg-inline--fa fa-phone fa-w-16"   data-prefix="fas" data-icon="phone" role="img" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+            </path>
+          </svg>
+      
+    </a>
+    <script src="https://kit.fontawesome.com/d3e951b043.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
